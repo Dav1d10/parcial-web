@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import '../globals.css'
+import Header from '@/app/components/header'
 
 export const metadata: Metadata = {
   title: 'App',
@@ -17,7 +18,13 @@ export default async function LangLayout({
 
     return (
         <html lang={lang}>
-            <body>{children}</body>
+            <body>
+              <Header></Header>  
+              <main>
+                {children}
+              </main>
+              <footer></footer>
+            </body>
         </html>
     )
 }
