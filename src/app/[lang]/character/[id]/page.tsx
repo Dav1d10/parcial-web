@@ -29,16 +29,15 @@ export default async function CharacterDetail({
 
   return (
     <main className='min-h-screen bg-[#e0e0e0] p-8'>
-      <div className='max-w-3xl mx-auto'>
+      <div className='max-w-2xl mx-auto'>
 
         <h1 className='text-3xl font-bold text-center text-[#FDB608] mb-6'>
           {character.name}
         </h1>
 
-        <div className={`flex gap-6 bg-[#e0e0e0] p-6 rounded-xl border-4 ${borderColor}`}>
-            
-            
-            <div className='flex-1 flex flex-col justify-center gap-3'>
+        <div className={`flex min-h-[420px] bg-[#e0e0e0] rounded-xl border-4 overflow-hidden ${borderColor}`}>
+
+            <div className='flex-1 flex flex-col justify-center gap-3 p-6'>
                 <p className='text-gray-900'><span className='font-bold'>{dict.house}:</span> {character.house}</p>
                 <p className='text-gray-900'><span className='font-bold'>{dict.gender}:</span> {character.gender}</p>
                 <p className='text-gray-900'><span className='font-bold'>{dict.wand}:</span> {character.wand.core}</p>
@@ -46,24 +45,22 @@ export default async function CharacterDetail({
                 <p className='text-gray-900'><span className='font-bold'>{dict.length}:</span> {character.wand.length}</p>
             </div>
 
-            
-            <div className='relative w-80 h-[450px]'>
+            <div className='relative w-1/2 self-stretch'>
                 {character.image ? (
                 <Image
                     src={character.image}
                     alt={character.name}
                     fill
-                    style={{ objectFit: 'cover' }}
-                    className='rounded-lg'
+                    style={{ objectFit: 'cover', objectPosition: 'top center' }}
                 />
                 ) : (
-                <div className='w-full h-full bg-gray-300 rounded-lg flex items-center justify-center'>
+                <div className='w-full h-full bg-gray-300 flex items-center justify-center'>
                     <p className='text-gray-500'>No image</p>
                 </div>
                 )}
             </div>
 
-            </div>
+        </div>
       </div>
     </main>
   )
