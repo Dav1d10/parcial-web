@@ -1,6 +1,13 @@
 {
-  "welcome": "Bienvenido",
+  "welcome": "Personajes de Harry Potter",
   "profile": "Perfil",
   "language": "Idioma",
-  "description": "Esta es una aplicación para el parcial de web"
+  "description": "Explora el universo mágico de Harry Potter: un listado completo de personajes con su casa, especie y datos principales.",
+  "rights": "© 2026 Harry Potter App. Todos los derechos reservados.",
+  "course": "Desarrollado para: ISIS3710",
+  "house": "Casa",
+  "gender": "Genero",
+  "wand": "Varita",
+  "wood": "Madera",
+  "length": "Longitud"
 }

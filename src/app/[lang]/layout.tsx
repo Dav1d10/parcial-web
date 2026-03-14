@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import '../globals.css'
 import Header from '@/app/components/header'
+import Footer from '@/app/components/footer'
 
 export const metadata: Metadata = {
   title: 'App',
@@ -19,11 +20,11 @@ export default async function LangLayout({
     return (
         <html lang={lang}>
             <body>
-              <Header></Header>  
+              <Header lang={lang}></Header>  
               <main>
                 {children}
               </main>
-              <footer></footer>
+              <Footer lang={lang}></Footer>
             </body>
         </html>
     )

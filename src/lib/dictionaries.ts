@@ -5,6 +5,13 @@ export interface Dictionary {
   profile: string
   language: string
   description: string
+  rights: string
+  course: string
+  house: string
+  gender: string
+  wand: string
+  wood: string
+  length: string
 }
 
 const dictionaries: { [key: string]: () => Promise<Dictionary> } = {

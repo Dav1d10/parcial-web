@@ -1,6 +1,13 @@
 {
-  "welcome": "Welcome",
+  "welcome": "Harry Potter Characters",
   "profile": "Profile",
   "language": "Language",
-  "description": "This is an application for web's exam"
+  "description": "Explore the magic universe of Harry Potter: complete characters listing with their house, species and main data.",
+  "rights": "© 2026 Harry Potter App. All rights reserved.",
+  "course": "Developed for: ISIS3710",
+  "house": "House",
+  "gender": "Gender",
+  "wand": "Wand",
+  "wood": "Wood",
+  "length": "Length"
 }
